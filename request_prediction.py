@@ -13,7 +13,7 @@ from src.request_prediction_xgb import prepare_data, predict
 from sklearn.externals import joblib
 
 parser = argparse.ArgumentParser()
-parser.add_argument("-id", "--movie-id", default=356, type=int, help="Movie ID")
+parser.add_argument("-id", "--movie-id", type=int, help="Movie ID")
 parser.add_argument("-g", "--genres", default="Comedy,Sci-Fi")
 parser.add_argument("-rf", "--ratings-file", default="data/ratings.csv")
 parser.add_argument("-mf", "--movies-file", default="data/movies.csv")
